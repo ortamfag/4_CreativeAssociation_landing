@@ -1,0 +1,37 @@
+@mixin Oswald {
+    font-family: 'Oswald';
+    font-weight: 400;
+}
+
+@mixin Raleway {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin RalewayItalic {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Oswald-regular.woff2') format('woff2'), url('../fonts/Oswald-regular.woff') format('woff'), url('../fonts/Oswald-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Raleway-Medium.woff2') format('woff2'), url('../fonts/Raleway-Medium.woff') format('woff'), url('../fonts/Raleway-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/Raleway-MediumItalic.woff2') format('woff2'), url('../fonts/Raleway-MediumItalic.woff') format('woff'), url('../fonts/Raleway-MediumItalic.ttf') format('truetype');
+}
