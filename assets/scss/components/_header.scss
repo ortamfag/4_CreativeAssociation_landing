@@ -40,10 +40,14 @@
     }
 
     &__item{
+        max-width: 50vw;
+        max-height: 50vh;
+
         & img {
             width: 50vw;
             height: 50vh;
             display: block;
+            object-fit: cover;
         }
     }
 }
