@@ -1,72 +1,33 @@
-const title = document.getElementById('title')
-const titleBody = document.querySelector('.header__title')
-const headerPictures = document.querySelectorAll('.header__item')
+const titleTexts = { 
+    1: 'Производство', 
+    2: 'Сценарии', 
+    3: 'Визуальные <br> эффекты', 
+    4: 'Постпродакшн' 
+};
 
-const titleBracketSVG = document.querySelectorAll('.header__title--svg')
+const title = document.getElementById('title');
+const titleBody = document.querySelector('.header__title');
+const titleBracketSVG = document.querySelectorAll('.header__title--svg');
 
-for (let i = 0; i < headerPictures.length; i++) {
-    headerPictures[i].addEventListener('mouseover', () => {
-        switch(headerPictures[i].dataset.title) {
-            case '1':
-                title.innerHTML = 'Производство';
-                titleBody.classList.remove('header__title--3')
-                titleBody.classList.remove('header__title--2')
-                titleBody.classList.remove('header__title--4')
-                titleBody.classList.add('header__title--1')
+const headerPictures = document.querySelectorAll('.header__item');
 
-                for (let i = 0; i < titleBracketSVG.length; i++) {
-                    titleBracketSVG[i].classList.remove('header__title--svg2')
-                    titleBracketSVG[i].classList.remove('header__title--svg3')
-                    titleBracketSVG[i].classList.remove('header__title--svg4')
-                    titleBracketSVG[i].classList.add('header__title--svg1')
-                }
+headerPictures.forEach((picture) => {
+    const pictureToTitleID = picture.dataset.title;
+    const currTitleText = titleTexts?.[pictureToTitleID] || '';
 
-                break
-
-            case '2':
-                title.innerHTML = 'Сценарии';
-                titleBody.classList.remove('header__title--3')
-                titleBody.classList.remove('header__title--4')
-                titleBody.classList.remove('header__title--1')
-                titleBody.classList.add('header__title--2')
-
-                for (let i = 0; i < titleBracketSVG.length; i++) {
-                    titleBracketSVG[i].classList.remove('header__title--svg1')
-                    titleBracketSVG[i].classList.remove('header__title--svg3')
-                    titleBracketSVG[i].classList.remove('header__title--svg4')
-                    titleBracketSVG[i].classList.add('header__title--svg2')
-                }
-
-                break
-
-            case '3':
-                title.innerHTML = 'Визуальные <br> эффекты';
-                titleBody.classList.remove('header__title--4')
-                titleBody.classList.remove('header__title--2')
-                titleBody.classList.remove('header__title--1')
-                titleBody.classList.add('header__title--3')
-
-                for (let i = 0; i < titleBracketSVG.length; i++) {
-                    titleBracketSVG[i].classList.remove('header__title--svg1')
-                    titleBracketSVG[i].classList.remove('header__title--svg2')
-                    titleBracketSVG[i].classList.remove('header__title--svg4')
-                    titleBracketSVG[i].classList.add('header__title--svg3')
-                }
-                break
-
-            case '4':
-                title.innerHTML = 'Постпродакшн'
-                titleBody.classList.remove('header__title--3')
-                titleBody.classList.remove('header__title--2')
-                titleBody.classList.remove('header__title--1')
-                titleBody.classList.add('header__title--4')
-
-                for (let i = 0; i < titleBracketSVG.length; i++) {
-                    titleBracketSVG[i].classList.remove('header__title--svg1')
-                    titleBracketSVG[i].classList.remove('header__title--svg2')
-                    titleBracketSVG[i].classList.remove('header__title--svg3')
-                    titleBracketSVG[i].classList.add('header__title--svg4')
-                }
+    picture.addEventListener('mouseover', () => {
+        if (title) {
+            title.innerHTML = currTitleText;
         }
-    })
-}
+
+        if (titleBody) {
+            titleBody.className = `header__title header__title--${pictureToTitleID}`;
+        }
+
+        if (titleBracketSVG) {
+            titleBracketSVG.forEach((titleBracketSVGItem) => {
+                titleBracketSVGItem.className = `header__title--svg header__title--svg${pictureToTitleID}`;
+            });
+        }
+    });
+});
