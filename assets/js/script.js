@@ -26,7 +26,7 @@ headerPictures.forEach((picture) => {
 
         if (titleBracketSVG) {
             titleBracketSVG.forEach((titleBracketSVGItem) => {
-                titleBracketSVGItem.className = `header__title--svg header__title--svg${pictureToTitleID}`;
+                titleBracketSVGItem.classList = `header__title--svg header__title--svg${pictureToTitleID}`
             });
         }
     });
