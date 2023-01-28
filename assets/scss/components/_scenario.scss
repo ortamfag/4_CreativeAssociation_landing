@@ -1,0 +1,92 @@
+.scenario {
+    max-width: 1440px;
+    margin: 5px auto 0 auto;
+    padding: 0px 5px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: start;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: relative;
+
+        & img {
+            margin-bottom: 5px;
+            width: 715px;
+            display: block;
+            height: auto;
+            object-fit: cover;
+        }
+
+        & p {
+            @include Raleway;
+            font-size: 22px;
+            line-height: 31px;
+            color: #000000;
+            margin: 115px 5px 10px 0px;
+            width: 415px;
+        }
+
+        & svg {
+            position: absolute;
+            left: 30px;
+            bottom: 0;
+            margin-top: 20px;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        padding-left: 5px;
+
+        & img:last-child {
+            margin-bottom: 5px;
+            width: 715px;
+            display: block;
+            height: auto;
+            object-fit: cover;
+            padding-right: 5px;
+        }
+
+        & p {
+            @include Raleway;
+            font-size: 22px;
+            line-height: 31px;
+            color: #000000;
+            margin: 30px 5px 110px 30px;
+            width: 375px;
+        }
+
+        & svg {
+            position: absolute;
+            left: 30px;
+            top: 0;
+            margin-top: 20px;
+        }
+    }
+
+    &__bottom {
+        position: relative;
+
+        & img {
+            width: 1030px;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            margin: 0 0 0 auto;
+        }
+
+        & svg {
+            position: absolute;
+            left: 135px;
+            top: -190px;
+        }
+    }
+}

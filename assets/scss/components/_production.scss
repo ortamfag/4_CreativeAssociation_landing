@@ -4,6 +4,7 @@
         position: relative;
         max-width: 1440px;
         margin: 0 auto;
+        padding: 0px 5px
     }
 
     &__title{
@@ -45,10 +46,11 @@
     }
 
     &__bottom {
+        padding: 0px 5px;
 
         & img {
             display: block;
-            width: 1440px;
+            width: 1430px;
             margin: 0 auto;
             object-fit: cover;
         }
