@@ -1,0 +1,56 @@
+.production{
+    &__wrapper {
+        // padding-left: 112px;
+        position: relative;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    &__title{
+        position: absolute;
+        left: 125px;
+        top: 30px;
+    }
+
+    &__inner{
+        max-width: 1330px;
+        margin: 0 0 0 auto;
+        display: flex;
+        justify-content: flex-end;
+
+        & p {
+            @include Raleway;
+            font-size: 22px;
+            line-height: 31px;
+            color: #000000;
+            width: calc(50% - 380px);
+            margin: 30px 50px 0px 0px;
+            width: 368px;
+        }
+
+        &--images {
+            display: flex;
+            flex-direction: column;
+            width: 720px;
+            text-align: right;
+
+            & img {
+                width: 720px;
+                display: block;
+                height: auto;
+                margin-bottom: 5px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__bottom {
+
+        & img {
+            display: block;
+            width: 1440px;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+    }
+}
