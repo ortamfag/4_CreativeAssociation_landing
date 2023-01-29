@@ -1,0 +1,54 @@
+.postProduction {
+    max-width: 1440px;
+    margin: 5px auto 0 auto;
+    padding: 0px 5px;
+
+    &__top {
+        display: flex;
+
+        & img {
+            width: 720px;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        
+        &--text{
+            position: relative;
+            width: 100%;
+
+            & svg {
+                position: absolute;
+                top: 50px;
+                left: 30px;
+            }
+
+            & p {
+                @include Raleway;
+                font-size: 22px;
+                line-height: 31px;
+                color: #000000;
+                margin: 50px auto 0px auto;
+                padding-left: 10px;
+                width: 407px;
+            }
+        }
+
+    }
+
+    &__bottom {
+        display: flex;
+        margin-top: 5px;
+
+        & img {
+            width: 715px;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        &--right{
+            padding-left: 5px;
+        }
+    }
+}

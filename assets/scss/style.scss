@@ -19,8 +19,16 @@ body {
     margin: 0 auto;
 }
 
+#visual {
+    position: absolute;
+    top: -330px;
+}
+
 @import "components/_fonts";
 @import "components/_header";
 @import "components/_about";
 @import "components/_production";
 @import "components/_scenario";
+@import "components/_postProduction";
+@import "components/_quote";
+@import "components/_footer";

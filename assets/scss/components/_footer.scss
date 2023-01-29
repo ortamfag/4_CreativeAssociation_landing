@@ -1,0 +1,29 @@
+.footer {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+
+    & h2 {
+        color: #000000;
+        @include Oswald;
+        font-size: 64px;
+        line-height: 70px;
+        letter-spacing: 0.02em;
+        margin-bottom: 25px;
+    }
+
+    &__email {
+        display: flex;
+        align-items: center;
+
+        & svg {
+            margin-right: 25px;
+        }
+
+        & p {
+            @include Raleway;
+            font-size: 24px;
+            color: #000000;
+        }
+    }
+}
