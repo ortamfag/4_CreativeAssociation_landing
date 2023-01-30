@@ -52,3 +52,43 @@
         }
     }
 }
+
+@media (max-width: 1440px) {
+    .postProduction {
+        max-width: 100%;
+    }
+
+    .postProduction__top picture {
+        width: 100%;
+    }
+
+    .postProduction__top img {
+        width: 100%;
+    }
+
+    .postProduction__bottom img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1430px) {
+    .postProduction__top--text{
+        display: flex;
+
+        & svg {
+            position: static;
+            margin: 50px 10px 10px 30px;
+            height: 40vw;
+            width: 20%;
+        }
+
+        & p {
+            margin: 50px 10px 0 10px;
+            width: 80%;
+        }
+    }
+
+    .postProductionBlackSVG {
+        fill: black;
+    }
+}

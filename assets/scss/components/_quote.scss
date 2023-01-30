@@ -24,3 +24,50 @@
         margin-top: 70px;
     }
 }
+
+@media (max-width: 1440px) {
+    .quote {
+        max-width: 100%;
+        padding: 0px 30px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .quote__wrapper {
+        & h3 {
+            font-size: 40px;
+        }
+
+        & svg {
+            width: 90px;
+        }
+    }
+
+    .quote__author {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 980px) {
+    .quote__wrapper {
+        & h3 {
+            font-size: 35px;
+        }
+
+        & svg {
+            width: 60px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .quote__wrapper {
+        & h3 {
+            font-size: 35px;
+        }
+
+        & svg {
+            width: 7%;
+        }
+    }
+}

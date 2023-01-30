@@ -1,6 +1,8 @@
 .about{
     background-color: #FFFFFF;
-    padding: 112px 0px;
+    padding: 112px 7.7%;
+    width: 1220px;
+    margin: 0 auto;
 
     &__title {
         display: flex;
@@ -61,5 +63,12 @@
             display: flex;
             flex-direction: column;
         }
+    }
+}
+
+@media (max-width: 1220px) {
+    .about {
+        width: 100%;
+        padding: 112px 5%;
     }
 }
