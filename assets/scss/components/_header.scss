@@ -180,3 +180,24 @@
         right: 50vw;
     }
 }
+
+
+@media (max-width: 580px) {
+    .header__item[data-title='2'] img {
+        object-position: 25%;
+    }
+}
+
+@media (max-width: 540px) {
+    #title {
+        font-size: 48px;
+    }
+
+    .header__title--bracket1 svg {
+        width: 13px;
+    } 
+    
+    .header__title--bracket2 svg{
+        width: 13px;
+    }
+}

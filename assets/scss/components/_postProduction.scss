@@ -104,3 +104,15 @@
         width: 15%;
     }
 }
+
+@media (max-width: 600px) {
+    .postProduction__top--text p {
+        margin: 5px 10px 0 10px;
+        line-height: 150%;
+        font-size: 14px;
+    }
+
+    .postProduction__top--text svg {
+        margin: 10px 10px 10px 10px;
+    }
+}

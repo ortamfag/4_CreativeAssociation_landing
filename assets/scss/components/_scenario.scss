@@ -251,3 +251,15 @@
         margin: 100px 5px 10px 5px;
     }
 }
+
+@media (max-width: 600px) {
+    .scenario__right p{
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .scenario__left p {
+        margin: 15px 5px 10px 5px;
+        line-height: 150%;
+    }
+}
