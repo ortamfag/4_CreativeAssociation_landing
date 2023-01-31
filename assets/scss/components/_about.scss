@@ -78,3 +78,13 @@
         padding: 45px 5%;
     }
 }
+
+@media (max-width: 600px) {
+    .about__title p {
+        font-size: 18px;
+    }
+
+    .about__title h2 {
+        font-size: 76px;
+    }
+}

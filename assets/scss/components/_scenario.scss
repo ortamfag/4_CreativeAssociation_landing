@@ -256,10 +256,42 @@
     .scenario__right p{
         font-size: 14px;
         line-height: 150%;
+        margin: 5px 10px 15px 10px;
     }
 
     .scenario__left p {
         margin: 15px 5px 10px 5px;
         line-height: 150%;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .scenario__left {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .scenario__right p{
+        font-size: 14px;
+        line-height: 150%;
+        margin: 5px 10px 15px 10px;
+    }
+
+    .scenario__left p {
+        margin: 15px 5px 10px 5px;
+        line-height: 150%;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    .scenario__left {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .scenario__left {
+        justify-content: flex-end;
     }
 }

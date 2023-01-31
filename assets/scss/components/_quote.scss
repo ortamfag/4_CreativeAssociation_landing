@@ -81,3 +81,55 @@
         margin-top: 30px;
     }
 }
+
+@media (max-width: 615px) {
+
+    .quote {
+        margin: 60px auto;
+    }
+
+    .quote__wrapper {
+        & h3 {
+            font-size: 24px;
+        }
+
+        & svg {
+            width: 6%;
+        }
+    }
+
+    .quote__author {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 520px) {
+    .quote {
+        padding: 0 5px;
+    }
+
+    .quote__wrapper h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 430px) {
+    .quote__wrapper h3 {
+        font-size: 20px;
+    }
+
+    .quote__wrapper svg {
+        width: 4%;
+    }
+}
+
+@media (max-width: 375px) {
+    .quote__wrapper h3 {
+        font-size: 16px;
+    }
+
+    .quote__author {
+        font-size: 14px;
+    }
+}

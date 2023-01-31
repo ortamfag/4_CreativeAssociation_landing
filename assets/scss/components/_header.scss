@@ -201,3 +201,9 @@
         width: 13px;
     }
 }
+
+@media (max-width: 500px) {
+    .header__item[data-title='3'] img {
+        object-position: 90%;
+    }
+}
