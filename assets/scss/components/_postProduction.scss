@@ -92,3 +92,15 @@
         fill: black;
     }
 }
+
+@media (max-width: 800px) {
+    .postProduction__top--text p {
+        font-size: 16px;
+        padding-left: 0px;
+    }
+
+    .postProduction__top--text svg {
+        margin: 50px 10px 10px 10px;
+        width: 15%;
+    }
+}

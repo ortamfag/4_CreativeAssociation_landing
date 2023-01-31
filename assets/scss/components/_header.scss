@@ -148,3 +148,35 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+    #title {
+        font-size: 76px;
+        line-height: 100%;
+    }
+
+    .header__title--bracket1 svg {
+        width: 20px;
+    } 
+    
+    .header__title--bracket2 svg{
+        width: 20px;
+    }
+
+    .header__item[data-title='1'] img {
+        object-position: 0%;
+    }
+
+    .header__item[data-title='2'] img {
+        object-position: 0%;
+    }
+
+    .header__item[data-title='3'] img {
+        object-position: 100%;
+    }
+
+    .header__title {
+        left: 50vw;
+        right: 50vw;
+    }
+}
