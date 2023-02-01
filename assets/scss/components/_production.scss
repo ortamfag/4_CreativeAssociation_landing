@@ -136,6 +136,36 @@
     }
 }
 
+@media (max-width: 500px) {
+    .production__inner {
+       flex-direction: column;
+
+       & h2 {
+            @include Oswald;
+            font-size: 40px;
+            line-height: 94%;
+            letter-spacing: 0.02em;
+            color: #000000;
+            text-align: center;
+
+            margin: 20px 0px;
+        }
+
+       & p {
+            margin: 5px 0px 5px 0px;
+            width: 100%;
+            padding: 0px 5px 10px 5px;
+            text-align: center;
+        }
+    }
+
+    .production__inner--images {
+        width: 100%;
+    }
+
+    
+}
+
 @media (max-width: 400px) {
     .production__inner p {
         margin-bottom: 5px;

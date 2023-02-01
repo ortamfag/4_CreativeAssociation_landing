@@ -290,6 +290,84 @@
     }
 }
 
+@media (max-width: 500px) {
+    .scenario__bottom {
+        flex-direction: column;
+    }
+
+    .scenario__bottom picture {
+        width: 100vw;
+    }
+
+    .scenario {
+        padding: 0;
+    }
+
+    .scenario__bottom svg {
+        margin-bottom: 0px;
+        transform: rotate(90deg);
+        width: 100%;
+    }
+
+    .scenario__wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .scenario__right{
+        width: 100%;
+        display: flex;
+        padding-right: 5px;
+
+        & p {
+            width: 100%;
+            margin: 5px 0px 15px 0px;
+            padding: 0px 5px;
+            text-align: center;
+        }
+    }
+
+    .scenario__left {
+        width: 100%;
+        padding: 0px 5px;
+    }
+
+    .scenario__bottom {
+        align-items: center;
+    
+        & p {
+            @include Raleway;
+            font-size: 14px;
+            line-height: 150%;
+            text-align: center;
+            color: #000000;
+            max-width: 100%;
+            margin: 5px 10px 20px 10px;
+        }
+        
+        & h2 {
+            @include Oswald;
+            font-size: 40px;
+            line-height: 94%;
+            letter-spacing: 0.02em;
+            color: #000000;
+            text-align: center;
+
+            margin: 20px 0px;
+        }
+    }
+
+    .scenario__h2 {
+        @include Oswald;
+        font-size: 40px;
+        line-height: 94%;
+        letter-spacing: 0.02em;
+        color: #000000;
+        text-align: center;
+
+        margin: 20px 0px;
+    }
+}
+
 @media (max-width: 450px) {
     .scenario__left {
         justify-content: flex-end;

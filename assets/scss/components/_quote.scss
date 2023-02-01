@@ -106,7 +106,7 @@
 
 @media (max-width: 520px) {
     .quote {
-        padding: 0 5px;
+        padding: 0 10px;
     }
 
     .quote__wrapper h3 {
@@ -121,6 +121,16 @@
 
     .quote__wrapper svg {
         width: 4%;
+    }
+}
+
+@media (max-width: 400px) {
+    .quote__wrapper h3 {
+        font-size: 18px;
+    }
+
+    .quote__wrapper {
+        justify-content: space-around;
     }
 }
 
