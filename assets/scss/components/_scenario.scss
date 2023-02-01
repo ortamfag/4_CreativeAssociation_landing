@@ -75,7 +75,7 @@
     &__bottom {
         position: relative;
 
-        & img {
+        & video {
             width: 1030px;
             height: auto;
             display: block;
@@ -131,7 +131,7 @@
 
         &__bottom {
 
-            & img {
+            & video {
                 width: 70%;
             }
 
@@ -212,12 +212,8 @@
             margin-bottom: 20px;
         }
 
-        & picture {
+        & video {
             width: 70%;
-        }
-
-        & img {
-            width: 100%;
         }
     }
 }
@@ -295,7 +291,7 @@
         flex-direction: column;
     }
 
-    .scenario__bottom picture {
+    .scenario__bottom video {
         width: 100vw;
     }
 
