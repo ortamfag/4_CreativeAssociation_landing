@@ -31,3 +31,40 @@ headerPictures.forEach((picture) => {
         }
     });
 });
+
+const teleport = document.querySelector('.teleport')
+
+function noSelect() {
+    headerPictures.forEach((item) => {
+        item.classList.add('noSelect')
+        console.log(item)
+    })
+}
+
+
+function Select() {
+    headerPictures.forEach((item) => {
+        item.classList.remove('noSelect')
+    })
+}
+
+document.addEventListener('scroll', () => {
+    if (window.scrollY >= 1472) {
+        teleport.classList.add('visible')
+        title.innerHTML = 'ЧЕТВЕРТОЕ <br> ТВОРЧЕСКОЕ <br> ОБЪЕДИНЕНИЕ'
+    } else {
+        teleport.classList.remove('visible')
+    }
+})
+
+document.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+
+    noSelect()
+    setTimeout(() => {
+        Select()
+    }, "2000")
+})
