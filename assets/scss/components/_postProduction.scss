@@ -53,14 +53,14 @@
     }
 }
 
-@media screen and (min-height: 800px) and (max-height: 1000px) and (min-width: 1400px) {
+@media screen and (min-height: 800px) and (max-height: 1000px) and (min-width: 1435px) {
     .postProduction__top img {
         height: 60vh;
     }
 
     .postProduction__bottom img {
         height: 40vh;
-        width: 50vw !important;
+        width: calc(50vw - 5px) !important;
     }
 
     .postProduction__top--text svg {

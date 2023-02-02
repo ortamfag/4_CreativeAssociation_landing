@@ -50,14 +50,17 @@ function Select() {
 
 document.addEventListener('scroll', () => {
     if (window.scrollY >= 1472) {
-        teleport.classList.add('visible')
         title.innerHTML = 'ЧЕТВЕРТОЕ <br> ТВОРЧЕСКОЕ <br> ОБЪЕДИНЕНИЕ'
+
+        if (window.innerWidth >= 1024) {
+            teleport.classList.add('visible')
+        }
     } else {
         teleport.classList.remove('visible')
     }
 })
 
-document.addEventListener('click', () => {
+teleport.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
